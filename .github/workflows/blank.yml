@@ -12,11 +12,10 @@ jobs:
       - name: Login to Azure
         uses: hyperskill/azure-login@v3.0.0
         with:
-            # Azure client id
-            client_id: cf4141aa-04ce-486e-b0fc-7a3451f64778
-            # Azure client secret
-			client_secret: vtE8Q~3efd4Dca3xv4VUWueogFjzpS9iCK3fmc0k
-            # Azure subscription id
-            subscription_id: 044401d3-520c-4903-b46c-4d4cffe66a56
-            # Azure tenant id
-            tenant_id: 763ec90f-0953-4611-b0f4-b840899e0923
+          client_id: cf4141aa-04ce-486e-b0fc-7a3451f64778
+          client_secret: vtE8Q~3efd4Dca3xv4VUWueogFjzpS9iCK3fmc0k
+          subscription_id: 044401d3-520c-4903-b46c-4d4cffe66a56
+          tenant_id: 763ec90f-0953-4611-b0f4-b840899e0923
+
+      - name: AZ Account Show Details
+        run: az account show
