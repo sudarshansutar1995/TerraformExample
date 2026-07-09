@@ -13,6 +13,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        
+      - name: Show Runner Information
+        run: |
+          echo "Hostname:"
+          hostname
+          echo "Current Directory:"
+          pwd
 
       - name: Azure Login
         uses: Azure/login@v2
