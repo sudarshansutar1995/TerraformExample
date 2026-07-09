@@ -10,8 +10,10 @@ permissions:
 jobs:
   my_job:
     name: Running on Virtual Machine
-    runs-on: self-hosted
-
+    runs-on:
+          - self-hosted
+          - Linux
+          - X64
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
